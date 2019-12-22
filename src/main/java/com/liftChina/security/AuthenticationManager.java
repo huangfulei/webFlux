@@ -1,8 +1,7 @@
-package com.ard333.springbootwebfluxjjwt.security;
+package com.liftChina.security;
 
-import com.ard333.springbootwebfluxjjwt.security.model.Role;
+import com.liftChina.security.model.Role;
 import io.jsonwebtoken.Claims;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.ReactiveAuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -14,15 +13,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- *
- * @author ard333
+ * for validating token and role
+ * @author Fulei
  */
 @Component
 public class AuthenticationManager implements ReactiveAuthenticationManager {
 
-	@Autowired
-	private JWTUtil jwtUtil;
-	
+	private final JWTUtil jwtUtil;
+
+	public AuthenticationManager(JWTUtil jwtUtil) {
+		this.jwtUtil = jwtUtil;
+	}
+
 	@Override
 	@SuppressWarnings("unchecked")
 	public Mono<Authentication> authenticate(Authentication authentication) {

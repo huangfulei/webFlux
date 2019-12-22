@@ -1,0 +1,25 @@
+logging:
+  level:
+    root: DEBUG
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://fulei:Hfl1027==@cluster0-zwrtr.mongodb.net/test?retryWrites=true&w=majority
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1099209465875-eaukjq9g4710l4bl986ehljcqebnp104.apps.googleusercontent.com
+            client -secret: c-Nv7xIyMAWLONdjN9KpRn6y
+          custom:
+            client-id: fooClientIdPassword
+            client-secret: secret
+            scopes: read,foo
+            authorization-grant-type: authorization_code
+            redirect-uri-template: http://localhost:8080/login/oauth2/code/custom
+
+#  springbootwebfluxjjwt.password.encoder.secret=12345678
+#  springbootwebfluxjjwt.password.encoder.iteration=33
+#  springbootwebfluxjjwt.password.encoder.keylength=256

@@ -1,8 +1,9 @@
-package com.ard333.springbootwebfluxjjwt.model;
+package com.liftChina.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.ard333.springbootwebfluxjjwt.security.model.Role;
+import com.liftChina.security.model.Role;
+import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -17,9 +18,9 @@ import lombok.ToString;
 
 /**
  *
- * @author ard333
+ * @author Fulei
  */
-@ToString @AllArgsConstructor @NoArgsConstructor
+@Document @ToString @AllArgsConstructor @NoArgsConstructor
 public class User implements UserDetails {
 	
 	private static final long serialVersionUID = 1L;

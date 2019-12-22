@@ -1,6 +1,6 @@
-package com.ard333.springbootwebfluxjjwt.security;
+package com.liftChina.security;
 
-import com.ard333.springbootwebfluxjjwt.model.User;
+import com.liftChina.model.User;
 import java.io.Serializable;
 import java.util.Base64;
 import java.util.Date;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 /**
  *
- * @author ard333
+ * @author Fulei
  */
 @Component
 public class JWTUtil implements Serializable {

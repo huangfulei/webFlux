@@ -1,10 +1,10 @@
-package com.ard333.springbootwebfluxjjwt.rest;
+package com.liftChina.rest;
 
-import com.ard333.springbootwebfluxjjwt.security.JWTUtil;
-import com.ard333.springbootwebfluxjjwt.security.PBKDF2Encoder;
-import com.ard333.springbootwebfluxjjwt.security.model.AuthRequest;
-import com.ard333.springbootwebfluxjjwt.security.model.AuthResponse;
-import com.ard333.springbootwebfluxjjwt.service.UserService;
+import com.liftChina.security.JWTUtil;
+import com.liftChina.security.PBKDF2Encoder;
+import com.liftChina.security.model.AuthRequest;
+import com.liftChina.security.model.AuthResponse;
+import com.liftChina.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 
 /**
  *
- * @author ard333
+ * @author Fulei
  */
 @RestController
 public class AuthenticationREST {

@@ -1,4 +1,4 @@
-package com.ard333.springbootwebfluxjjwt.model;
+package com.liftChina.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,7 +7,7 @@ import lombok.ToString;
 
 /**
  *
- * @author ard333
+ * @author Fulei
  */
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class Message {

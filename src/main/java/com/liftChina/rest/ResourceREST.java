@@ -1,6 +1,6 @@
-package com.ard333.springbootwebfluxjjwt.rest;
+package com.liftChina.rest;
 
-import com.ard333.springbootwebfluxjjwt.model.Message;
+import com.liftChina.model.Message;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;

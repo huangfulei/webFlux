@@ -1,14 +1,15 @@
-package com.ard333.springbootwebfluxjjwt.service;
+package com.liftChina.service;
 
-import com.ard333.springbootwebfluxjjwt.model.User;
-import com.ard333.springbootwebfluxjjwt.security.model.Role;
+import com.liftChina.model.User;
+import com.liftChina.security.model.Role;
 import java.util.Arrays;
+
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 /**
  *
- * @author ard333
+ * @author Fulei
  */
 @Service
 public class UserService {
