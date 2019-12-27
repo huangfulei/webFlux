@@ -26,7 +26,7 @@ public class JWTUtil implements Serializable {
 	
 	@Value("${springbootwebfluxjjwt.jjwt.expiration}")
 	private String expirationTime;
-	
+
 	public Claims getAllClaimsFromToken(String token) {
 		return Jwts.parser().setSigningKey(Base64.getEncoder().encodeToString(secret.getBytes())).parseClaimsJws(token).getBody();
 	}
